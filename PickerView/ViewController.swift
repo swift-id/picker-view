@@ -19,7 +19,8 @@ class ViewController: UIViewController,
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int,
                     forComponent component: Int) -> String? {
-        return "Malang"
+        
+        return cities[row]
     }
     
     // MARK: PickerView's protocol stubs
@@ -30,7 +31,8 @@ class ViewController: UIViewController,
     
     func pickerView(_ pickerView: UIPickerView,
                     numberOfRowsInComponent component: Int) -> Int {
-        return 3
+        
+        return cities.count
     }
     
     override func viewDidLoad() {
